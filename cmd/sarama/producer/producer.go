@@ -75,6 +75,7 @@ func submit(writer http.ResponseWriter, request *http.Request, p httprouter.Para
 	eStr, _ := json.Marshal(e)
 	// message.Value = sarama.StringEncoder(messageValue)
 	message.Value = sarama.StringEncoder(eStr)
+	message.Key = sarama.StringEncoder("1119")
 
 	fmt.Println("Received message: " + messageValue)
 	fmt.Println("msg to kafka:", eStr)

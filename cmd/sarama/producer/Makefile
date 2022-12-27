@@ -2,7 +2,7 @@ build:
 	go build -o producer producer.go
 
 run: build
-	KAFKA_PEERS=localhost:9092 KAFKA_TOPIC=orders KAFKA_PARTITION=1 KAFKA_GROUP=orders ./producer
+	KAFKA_PEERS=localhost:9092 KAFKA_TOPIC=t3 KAFKA_PARTITION=1 KAFKA_GROUP=orders ./producer
 
 post:
 	curl -X POST  http://localhost:9000/publish/curlTestData

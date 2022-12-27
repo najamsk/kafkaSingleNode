@@ -1,0 +1,1 @@
+Get docker-compose file from https://github.com/confluentinc/cp-all-in-one/blob/7.3.1-post/cp-all-in-one/docker-compose.yml this seems to work on apple m1 chip
